@@ -1,11 +1,11 @@
-#from PIL import Image
+from PIL import Image
 import numpy as np
 import pandas as pd #2
 import streamlit as st
 
-#im = Image.open("DSS_Pic.png")
-#image= np.array(im)
-#st.image(image)
+im = Image.open("DSS_Pic.png")
+image= np.array(im)
+st.image(image)
 st.markdown(" <center>  <h1> Training Certificates Verification </h1> </font> </center> </h1> ",
             unsafe_allow_html=True)
 File="DSS.xlsx"
@@ -28,7 +28,8 @@ df.columns  = [i.upper() for i in df.columns]
 df['CERTIFICATE_NO']=df['CERTIFICATE_NO'].astype('str')
 
 df.fillna(0)
-if st.button("Done"):           
+if st.button("Done"):
+ df=df.transpose()           
  st.dataframe(df[df['CERTIFICATE_NO']==SN])
 
 
