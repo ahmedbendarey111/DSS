@@ -29,7 +29,7 @@ df['CERTIFICATE_NO']=df['CERTIFICATE_NO'].astype('str')
 Result=df[df['CERTIFICATE_NO']==SN]
 
 Result=Result.T
-Result.columns('A','B')
+Result.columns
 
 df.fillna(0)
 if st.button("Done"):
