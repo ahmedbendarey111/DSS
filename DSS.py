@@ -3,17 +3,12 @@ import numpy as np
 import pandas as pd #2
 import streamlit as st
 
-import datetime
 im = Image.open("DSS_Pic.png")
 image= np.array(im)
 st.image(image)
 st.markdown(" <center>  <h1> Training Certificates Verification </h1> </font> </center> </h1> ",
             unsafe_allow_html=True)
-from datetime import time
 File="DSS.xlsx"
-Date=datetime.date.today()
-Date=Date.strftime('%d-%m-%Y')
-#st.write(Date)
 st.markdown(" <right>  <h1>Please Enter Serial Number </h1> </font> </right> </h1> ",
             unsafe_allow_html=True)
 st.markdown(" <right>  <h1>                                     الرجاء إدخال كود الشهادة </h1> </font> </right> </h1> ",
@@ -36,11 +31,4 @@ df.fillna(0)
 if st.button("Done"):           
  st.dataframe(df[df['CERTIFICATE_NO']==SN])
 
-
-
-
-
-
-#st.dataframe(df1,width=1200)
-col1, col2, col3 = st.columns(3)
 
