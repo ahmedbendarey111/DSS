@@ -26,10 +26,10 @@ df.columns  = [i.upper() for i in df.columns]
 #df['DATE']= pd.to_datetime(df['DATE'])
 #df.dropna(axis=0, inplace=True)
 df['CERTIFICATE_NO']=df['CERTIFICATE_NO'].astype('str')
-
+Result=df[df['CERTIFICATE_NO']==SN]
+Result=Result.T
 df.fillna(0)
 if st.button("Done"):
- df=df.T  
- st.dataframe(df[df['CERTIFICATE_NO']==SN])
+ st.dataframe(Result)
 
 
