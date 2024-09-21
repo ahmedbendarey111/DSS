@@ -5,9 +5,10 @@ import streamlit as st
 
 im = Image.open("DSS_Pic.png")
 image= np.array(im)
-st.image(image)
 st.markdown(" <center>  <h1> Training Certificates Verification </h1> </font> </center> </h1> ",
             unsafe_allow_html=True)
+
+st.image(image)
 File="DSS.xlsx"
 st.markdown(" <right>  <h1>Please Enter Serial Number </h1> </font> </right> </h1> ",
             unsafe_allow_html=True)
