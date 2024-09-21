@@ -29,7 +29,7 @@ df['CERTIFICATE_NO']=df['CERTIFICATE_NO'].astype('str')
 
 df.fillna(0)
 if st.button("Done"):
- df=df.transpose()           
+ df=df.transpose      
  st.dataframe(df[df['CERTIFICATE_NO']==SN])
 
 
