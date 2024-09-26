@@ -30,7 +30,7 @@ df['RESULT']=df['RESULT'].astype('str').replace('1','Verification Code is Valid'
 
 df['CERTIFICATE NO']=df['CERTIFICATE NO'].astype('str')
 
-st.write(df['CERTIFICATE NO'].count())
+st.write(df['CERTIFICATE NO'].list())
 
 Result=df[df['CERTIFICATE NO']==SN]
 
