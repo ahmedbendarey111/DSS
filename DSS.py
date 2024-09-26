@@ -16,7 +16,7 @@ st.markdown(" <right>  <h1>                                     الرجاء إ�
             unsafe_allow_html=True)
 
 SN = st.text_input("",value="",key="SN")
-SN.astype("str")
+SN.astype('str')
 SN=SN.strip()
 
 df = pd.read_excel(File,'Sheet1')
