@@ -35,7 +35,7 @@ if SN in (df['CERTIFICATE NO'].unique()):
 
  Result=Result.T
 else:
- Result=[]            
+ Result=['Verification Not Found']            
 
 
 df.fillna(0)
