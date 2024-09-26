@@ -40,6 +40,7 @@ else:
 
 df.fillna(0)
 if st.button("Verify"):
+ st.write('Validation Status')           
  st.dataframe(Result)
 
 
