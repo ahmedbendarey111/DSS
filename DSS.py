@@ -17,7 +17,7 @@ st.markdown(" <right>  <h1>                                     الرجاء إ�
 
 SN = st.text_input("",value="",key="SN")
 SN=SN.replace(' ','')
-
+SN=SN.upper()
 df = pd.read_excel(File,'Sheet1')
 df.columns  = [i.replace(' ','_') for i in df.columns]
 df.columns  = [i.upper() for i in df.columns]
