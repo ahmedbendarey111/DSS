@@ -26,8 +26,8 @@ df.columns  = [i.upper() for i in df.columns]
 #df['DATE']=df['DATE'].str.split(' ').str[0]
 #df['DATE']= pd.to_datetime(df['DATE'])
 #df.dropna(axis=0, inplace=True)
-df['CERTIFICATE_NO']=df['CERTIFICATE_NO'].astype('str')
-Result=df[df['CERTIFICATE_NO']==SN]
+df['CERTIFICATE NO']=df['CERTIFICATE NO'].astype('str')
+Result=df[df['CERTIFICATE NO']==SN]
 
 Result=Result.T
 
