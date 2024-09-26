@@ -30,11 +30,13 @@ df['RESULT']=df['RESULT'].astype('str').replace('1','Verification Code is Valid'
 
 df['CERTIFICATE NO']=df['CERTIFICATE NO'].astype('str')
 
-st.write(df['CERTIFICATE NO'].unique())
+if SN in (df['CERTIFICATE NO'].unique()):
+ Result=df[df['CERTIFICATE NO']==SN]
 
-Result=df[df['CERTIFICATE NO']==SN]
+ Result=Result.T
+else:
+ Result=[]            
 
-Result=Result.T
 
 df.fillna(0)
 if st.button("Verify"):
