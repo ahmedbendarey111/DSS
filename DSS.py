@@ -32,7 +32,7 @@ Result=df[df['CERTIFICATE_NO']==SN]
 Result=Result.T
 
 df.fillna(0)
-if st.button("Done"):
+if st.button("Verify"):
  st.dataframe(Result)
 
 
