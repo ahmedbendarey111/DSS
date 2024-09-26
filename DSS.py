@@ -43,5 +43,4 @@ if st.button("Verify"):
  st.write('Validation Status')           
  st.dataframe(Result)
  st.write('A certificate is only valid if the information matches the information provided above. If you have any questions or concerns, please contact Delta Safety at deltasafetyscience@gmail.com Or call our office at +201159417372')           
- st.write('OR You Can Communicate with US on WhatsApp through following link:')
- st.write('https://wa.me/201159417372')
+ st.write('Or you can communicate with us on WhatsApp through following link: https://wa.me/201159417372')
