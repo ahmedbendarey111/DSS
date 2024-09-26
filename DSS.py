@@ -29,6 +29,9 @@ df.columns  = [i.upper() for i in df.columns]
 df['RESULT']=df['RESULT'].astype('str').replace('1','Verification Code is Valid')
 
 df['CERTIFICATE NO']=df['CERTIFICATE NO'].astype('str')
+
+st.write(df['CERTIFICATE NO'].count())
+
 Result=df[df['CERTIFICATE NO']==SN]
 
 Result=Result.T
